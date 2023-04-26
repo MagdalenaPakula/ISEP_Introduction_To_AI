@@ -38,10 +38,19 @@ cpd_R = TabularCPD(variable="R", variable_card=2,
 bayesNet.add_cpds(cpd_L, cpd_I, cpd_S, cpd_N, cpd_R)
 
 # Check if the network structure and CPDs are valid
-#print(bayesNet.check_model())
+print(bayesNet.check_model())
 
 #Solver
 solver=VariableElimination(bayesNet)
 
+#Question 2
 result_N = solver.query(variables="N")
 print(result_N)
+
+#Question 3
+result_N_given_L = solver.query(variables="N", evidence={"L": True})
+print(result_N_given_L)
+
+#Question 4
+independencies = bayesNet.get_independencies()
+print(independencies)
