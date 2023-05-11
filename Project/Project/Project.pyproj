@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>90090fb8-7795-43b2-b297-8062dd902e6e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Project.py</StartupFile>
+    <StartupFile>module2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="module1.py" />
+    <Compile Include="module2.py" />
     <Compile Include="Project.py" />
   </ItemGroup>
   <ItemGroup>
