@@ -21,12 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="module1.py" />
-    <Compile Include="module2.py" />
-    <Compile Include="Project.py" />
+    <Compile Include="old1.py" />
+    <Compile Include="old2.py" />
+    <Compile Include="old3.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="COVID19_line_list_data.csv" />
+    <Content Include="Exercise1.py" />
+    <Content Include="Exercise2.py" />
+    <Content Include="Exercise3.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
